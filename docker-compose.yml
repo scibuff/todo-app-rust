@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  app:
+    image: scibuff/todo-app-rust
+    container_name: todo-app-rust
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        HOMEDIR: "/src"
+    volumes:
+      - "./:/src:rw"
+    stdin_open: true
+    tty: true
