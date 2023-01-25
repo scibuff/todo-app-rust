@@ -33,6 +33,14 @@ cargo new todo
      Created binary (application) `todo` package
 ```
 
+To run the `todo` application execute `cargo run` from within the `todo` folder, e.g.:
+```bash
+cd todo && cargo run
+    Finished dev [unoptimized + debuginfo] target(s) in 0.03s
+     Running `target/debug/todo`
+Hello, world!
+```
+
 # Features
 
 ## Print Usage
